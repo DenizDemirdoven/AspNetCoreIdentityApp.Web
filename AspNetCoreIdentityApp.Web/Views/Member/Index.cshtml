@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model UserViewModel
+
+
+<div class="row">
+    <div class="col-md-6 offset-md-3 text-center mb-2">
+        <h1>Kullanıcı Bilgileri</h1>
+        <user-picture-thumbnail picture-url="@Model.PictureUrl"></user-picture-thumbnail>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Kullanıcı Adı</th>
+                    <th>Rol</th>
+                    <th>Email</th>
+                    <th>Telefon Numarası</th>
+                    <th>Şehir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.UserName</td>
+                    <td>@Model.RoleName</td>
+                    <td>@Model.Email</td>
+                    <td>@Model.PhoneNumber</td>
+                    <td>@Model.City</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
